@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "archive-watch"
+version = "1.0.0-dev1"
+description = "Watch your downloads directory for additions and unzip them if they're archives."
+authors = ["Taylor B. <tayjaybabee@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+platformdirs = "^4.2.1"
+watchdog = "^4.0.0"
+
+
+[tool.poetry.group.GUI.dependencies]
+pystray = "^0.19.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
